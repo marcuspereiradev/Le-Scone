@@ -22,7 +22,7 @@ $font-2: 'Aref Ruqaa', serif;
 }
 
 @mixin tipo-2($size) {
-    font-family: $fonte-2;
+    font-family: $font-2;
     @if $size == 18 {
         font-size: em(18);
         line-height: em(30, 18);
@@ -31,4 +31,10 @@ $font-2: 'Aref Ruqaa', serif;
         font-size: em(24);
         line-height: em(30, 24);
     }
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
 }

@@ -1,0 +1,46 @@
+.menu {
+    margin-top: 160px;
+    margin-bottom: 160px;
+    @include device(small) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+.menu-item {
+    margin-bottom: 60px;
+    h2 {
+        @include tipo-2(24);
+        margin-bottom: 1em;
+    }
+    li {
+        @include tipo-1(18);
+        line-height: em(35, 18);
+    }
+    span {
+        font-family: $font-2;
+        color: $bege-escuro;
+        display: inline-block;
+        width: 70px;
+        margin-right: 10px;
+        text-align: right;
+        margin-left: -80px;
+        @include device(small) {
+            width: auto;
+            margin-left: 0px;
+        }
+    }
+    img {
+        border-radius: 50%;
+        border: 10px solid $bege-medio;
+        position: absolute;
+        right: 0px;
+        margin-top: 50px;
+        @include device(large) {
+            right: 120px;
+        }
+        @include device(small) {
+            width: 150px;
+        }
+    }
+}

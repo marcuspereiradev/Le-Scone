@@ -1,4 +1,11 @@
+// GERAIS
 @import 'reset';
 @import 'grid';
 @import 'variaveis-e-mixins';
 @import 'geral';
+
+// PARTES
+@import 'intro';
+@import 'menu';
+@import 'contato';
+@import 'footer';
